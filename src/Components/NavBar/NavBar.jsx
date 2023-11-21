@@ -6,7 +6,7 @@ import CartWidget from '../CartWidget/CartWidget';
 import logo from '../../assets/logo.png';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
-
+import { categories } from '../../data/productsData';
 
 
 const NavBar = () => {
@@ -24,7 +24,7 @@ const NavBar = () => {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">Productos</Nav.Link>
             <NavDropdown title="Categorias" id="basic-nav-dropdown">
-              {ProductsData.map((product)=>{
+              {categories.map((product)=>{
                 return (
                   <NavDropdown.Item key={product.id}>
                     <Link to={`/category/${product.category}`}>

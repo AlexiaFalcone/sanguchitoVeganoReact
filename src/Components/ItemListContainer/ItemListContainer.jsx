@@ -1,19 +1,20 @@
 import './ItemListContainer.css'
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import { getProducts, getElementByCategory } from '../../data/productsData';
 
-const ItemListContainer = ({product}) =>{
-    return(
-        <Card key={product.id} style={{ width: '18rem' }}>
-          <Card.Img variant="top" src={product.image} />
-          <Card.Body>
-            <Card.Title>{product.name}</Card.Title>
-            <Card.Text>
-            {product.description}
-            </Card.Text>
-            <Button variant="primary">Comprar</Button>
-          </Card.Body>
-        </Card>
-      );
-    };
+const ItemListContainer = () =>{
+ const [products, setProducts] = useState ([])
+ const {categoryId} = useParams ()
+
+ useEffect (() => {
+  if (categoryId) {
+    getElementByCategory (categoryId)
+     .then ((elem) => setProducts(elem))
+  } else{
+    getProducts()
+     .then ((elem) => setProducts(elem))
+  }
+ }, [categoryId])
+}
 export default ItemListContainer;
