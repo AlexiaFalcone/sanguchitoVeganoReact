@@ -1,8 +1,5 @@
-import './ItemListContainer.css'
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 
-const ItemListContainer = ({product}) =>{
+const ItemDetailContainer = ({product}) =>{
     return(
         <Card key={product.id} style={{ width: '18rem' }}>
           <Card.Img variant="top" src={product.image} />
@@ -16,4 +13,4 @@ const ItemListContainer = ({product}) =>{
         </Card>
       );
     };
-export default ItemListContainer;
+export default ItemDetailContainer;
