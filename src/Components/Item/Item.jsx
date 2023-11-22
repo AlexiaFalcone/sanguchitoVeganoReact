@@ -1,8 +1,8 @@
-const Item = (props) => {
-    
+import React from "react";
+import { Card } from "react-bootstrap";
+
+const Item = (props) => { 
     const {name, id, price, description} = props
-
-
     return (
         <div
             style={{
