@@ -1,9 +1,9 @@
 import React from "react";
-import ItemList from "../Components/ItemList/ItemList";
+import Item from "../Components/Item/Item";
 
 
 const Home = () => {
 
-    return <ItemList />
+    return <Item />
 }
 export default Home;

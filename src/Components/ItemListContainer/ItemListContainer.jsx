@@ -2,6 +2,7 @@ import './ItemListContainer.css'
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getProducts, getElementByCategory } from '../../data/productsData';
+import ItemList from '../ItemList/ItemList';
 
 const ItemListContainer = () =>{
  const [products, setProducts] = useState ([])
@@ -16,5 +17,12 @@ const ItemListContainer = () =>{
      .then ((elem) => setProducts(elem))
   }
  }, [categoryId])
+ 
+ return(
+  <ItemList items= {products}/>
+);
 }
+
+
+
 export default ItemListContainer;

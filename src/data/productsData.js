@@ -77,7 +77,7 @@ export const getElementByCategory = (category) =>{
 export const getProducts = () => {
     return new Promise ((res) => {
         setTimeout(() =>{
-            res(getProducts);
+            res(ProductsData);
         }, 2000);
     })
 }
