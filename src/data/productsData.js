@@ -65,7 +65,8 @@ export const ProductsData = [
     },
 ];
 
-export const getElementByCategory = () =>{
+
+export const getElementByCategory = (category) =>{
   return new Promise ((res) =>{
         const Products = ProductsData.filter (product => product.category === category);
         setTimeout (() =>{
