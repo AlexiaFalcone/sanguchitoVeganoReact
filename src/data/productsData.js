@@ -5,7 +5,7 @@ export const productsData = [
         price: 1200,
         description: "Media docena de sanguches de jamón y cheddar veganos, quedan muy ricos tostados.",
         category: "sanguche",
-        image: "../assets/sangucheJyq.jpeg",
+        image: "../../src/assets/sangucheJyq.jpeg",
     },
     {
         name: "Sanguchito de Aceituna y Queso",
@@ -13,7 +13,7 @@ export const productsData = [
         price: 1200,
         description: "Media docena de sanguches de aceituna y queso veganos, para los amantes de las aceitunas.",
         category: "sanguche",
-        image: "../assets/sangucheAyq.jpeg",
+        image: "../../src/assets/sangucheAyq.jpeg",
     },
     {
         name: "Sanguchito No Huevo",
@@ -21,7 +21,7 @@ export const productsData = [
         price: 1200,
         description: "Media docena de sanguches de no huevo (tofu) y queso vegano, tenes que probarlos.",
         category: "sanguche",
-        image: "../assets/sangucheNoHuevo.jpeg",
+        image: "../../src/assets/sangucheNoHuevo.jpeg",
     },
     {
         name: "Sanguchito de Tomate y Albaca",
@@ -29,7 +29,7 @@ export const productsData = [
         price: 1200,
         description: "Media docena de sanguches de tomate y albaca, una opción fresca y deliciosa.",
         category: "sanguche",
-        image: "../assets/sangucheTya.jpeg",
+        image: "../../src/assets/sangucheTya.jpeg",
     },
     {
         name: "Pan de Ajo",
@@ -37,7 +37,7 @@ export const productsData = [
         price: 800,
         description: "Tres panes saborizados con dip de garbanzos.",
         category: "panes",
-        image: "../assets/panAjo.jpeg",
+        image: "../../src/assets/panAjo.jpeg",
     },
     {
         name: "Pan de Cebolla",
@@ -45,7 +45,7 @@ export const productsData = [
         price: 800,
         description: "Tres panes saborizados con dip de garbanzos.",
         category: "panes",
-        image: "../assets/panCebolla.jpeg",
+        image: "../../src/assets/panCebolla.jpeg",
     },
     {
         name: "Pan de Oregano",
@@ -53,7 +53,7 @@ export const productsData = [
         price: 800,
         description: "Tres panes saborizados con dip de garbanzos.",
         category: "panes",
-        image: "../assets/panOregano.jpeg",
+        image: "../../src/assets/panOregano.jpeg",
     },
     {
         name: "Pan Integral",
@@ -61,7 +61,7 @@ export const productsData = [
         price: 800,
         description: "Pan integral de molde (ya cortado), listo para frizzar.",
         category: "panes",
-        image: ".../assets/panIntegral.jpeg",
+        image: "../../src/assets/panIntegral.jpeg",
     },
 ];
 

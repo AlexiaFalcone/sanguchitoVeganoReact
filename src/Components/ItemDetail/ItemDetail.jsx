@@ -1,7 +1,7 @@
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const itemDetail= ({ name, id, price, description, image }) =>{
+const ItemDetail= ({ name, id, price, description, image }) =>{
     return (
         <div
             style={{
@@ -27,6 +27,5 @@ const itemDetail= ({ name, id, price, description, image }) =>{
 
         </div>
     )
-
 }
-export default itemDetail;
+export default ItemDetail;
