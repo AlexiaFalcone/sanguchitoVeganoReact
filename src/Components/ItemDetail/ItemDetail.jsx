@@ -1,8 +1,7 @@
-import React from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const Item = ({ name, id, price, description, image }) => {
+const itemDetail= ({ name, id, price, description, image }) =>{
     return (
         <div
             style={{
@@ -30,4 +29,4 @@ const Item = ({ name, id, price, description, image }) => {
     )
 
 }
-export default Item;
+export default itemDetail;

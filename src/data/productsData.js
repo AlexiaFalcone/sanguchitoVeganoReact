@@ -1,11 +1,11 @@
-export const ProductsData = [
+export const productsData = [
     {
         name: "Sanguchito de Jamón y Cheddar",
         id: 1,
         price: 1200,
         description: "Media docena de sanguches de jamón y cheddar veganos, quedan muy ricos tostados.",
         category: "sanguche",
-        //image: "../assets/sangucheJyq.jpeg",
+        image: "../assets/sangucheJyq.jpeg",
     },
     {
         name: "Sanguchito de Aceituna y Queso",
@@ -13,7 +13,7 @@ export const ProductsData = [
         price: 1200,
         description: "Media docena de sanguches de aceituna y queso veganos, para los amantes de las aceitunas.",
         category: "sanguche",
-        //image: "../assets/sangucheAyq.jpeg",
+        image: "../assets/sangucheAyq.jpeg",
     },
     {
         name: "Sanguchito No Huevo",
@@ -21,7 +21,7 @@ export const ProductsData = [
         price: 1200,
         description: "Media docena de sanguches de no huevo (tofu) y queso vegano, tenes que probarlos.",
         category: "sanguche",
-        //image: "../assets/sangucheNoHuevo.jpeg",
+        image: "../assets/sangucheNoHuevo.jpeg",
     },
     {
         name: "Sanguchito de Tomate y Albaca",
@@ -29,7 +29,7 @@ export const ProductsData = [
         price: 1200,
         description: "Media docena de sanguches de tomate y albaca, una opción fresca y deliciosa.",
         category: "sanguche",
-        //image: "../assets/sangucheTya.jpeg",
+        image: "../assets/sangucheTya.jpeg",
     },
     {
         name: "Pan de Ajo",
@@ -37,7 +37,7 @@ export const ProductsData = [
         price: 800,
         description: "Tres panes saborizados con dip de garbanzos.",
         category: "panes",
-        //image: "../assets/panAjo.jpeg",
+        image: "../assets/panAjo.jpeg",
     },
     {
         name: "Pan de Cebolla",
@@ -45,7 +45,7 @@ export const ProductsData = [
         price: 800,
         description: "Tres panes saborizados con dip de garbanzos.",
         category: "panes",
-        //image: "../assets/panCebolla.jpeg",
+        image: "../assets/panCebolla.jpeg",
     },
     {
         name: "Pan de Oregano",
@@ -53,7 +53,7 @@ export const ProductsData = [
         price: 800,
         description: "Tres panes saborizados con dip de garbanzos.",
         category: "panes",
-        //image: "../assets/panOregano.jpeg",
+        image: "../assets/panOregano.jpeg",
     },
     {
         name: "Pan Integral",
@@ -61,26 +61,26 @@ export const ProductsData = [
         price: 800,
         description: "Pan integral de molde (ya cortado), listo para frizzar.",
         category: "panes",
-        //image: "../assets/panIntegral.jpeg",
+        image: ".../assets/panIntegral.jpeg",
     },
 ];
 
 
 export const getElementByCategory = (category) =>{
   return new Promise ((res) =>{
-        const Products = ProductsData.filter (product => product.category === category);
+        const products = productsData.filter (product => product.category === category);
         setTimeout (() =>{
-          res(Products);
-        }, 2000);
+          res(products);
+        }, 1000);
     });
 }
 export const getProducts = () => {
     return new Promise ((res) => {
         setTimeout(() =>{
-            res(ProductsData);
-        }, 2000);
+            res(productsData);
+        }, 1000);
     })
 }
 
-export const categories = [{id: 10, category: "sanguches"}, {id: 11, category: "panes"}];
+export const categories = [{id: 10, category: "sanguche"}, {id: 11, category: "panes"}];
 
