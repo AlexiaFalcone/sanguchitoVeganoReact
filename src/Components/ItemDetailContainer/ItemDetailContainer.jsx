@@ -1,17 +1,18 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { getProducts } from "../../data/productsData";
+import { getProductById } from "../../data/productsData";
+import ItemDetail from "../ItemDetail/ItemDetail";
 
 const ItemDetailContainer = () => {
-    const [products, setProducts] = useState ([])
+    const [products, setProducts] = useState ({})
     const {id} = useParams ()
     
     useEffect (() => {
-        getProducts (id)
+        getProductById (id)
         .then((elem) => setProducts(elem))
     }, [id])
     return(
-        <ItemDetail items= {products}/>
+        <ItemDetail {...products}/>
     )
 }
 export default ItemDetailContainer;

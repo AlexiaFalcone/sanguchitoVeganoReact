@@ -1,0 +1,66 @@
+.styleCardDiv {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    margin-top: 10px;
+    margin-left: 120px;
+
+}
+
+.styleCard {
+    width: 370px;
+    background-color: #d7dbde;
+    padding: 10px;
+    border-radius: 10px;
+    margin-block: 35px;
+    transition: 0.8s;
+}
+
+.styleCard:hover{
+    transform: scale(1.1) translateY(-2px);
+}
+
+.imgCard {
+    width: 100%;
+    margin-bottom: 5px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.nameContainer{
+    display: flex;
+    justify-content: center;
+    margin-block: 5px;
+}
+
+.nameCard{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: rgba(17, 91, 17, 0.862);
+    margin-bottom: 5px;
+}
+
+.descriptionCard{
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.priceContainer{
+    display: flex;
+    justify-content: center;
+    margin-block: 5px;
+}
+
+.priceCard{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: rgba(17, 91, 17, 0.862);
+    margin-bottom: 5px;
+}
+

@@ -1,0 +1,4 @@
+.styleCardContainer{
+    display: flex;
+    flex-wrap: wrap;
+}

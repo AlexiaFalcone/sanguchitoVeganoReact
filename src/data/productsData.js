@@ -82,5 +82,15 @@ export const getProducts = () => {
     })
 }
 
+export const getProductById = (id) => {
+    return new Promise ((res) => {
+        const products = productsData.find(
+            (product) => product.id === parseInt(id));
+            setTimeout(() =>{
+                res(products);
+            },1000);
+    });
+};
+
 export const categories = [{id: 10, category: "sanguche"}, {id: 11, category: "panes"}];
 

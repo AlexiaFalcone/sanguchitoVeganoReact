@@ -25,7 +25,7 @@ const NavBar = () => {
               {categories.map((product)=>{
                 return (
                   <NavDropdown.Item key={product.id}>
-                    <Link to={`/category/${product.category}`}>
+                    <Link to={`/category/${product.category}`} className='categoryStyle'>
                       {product.category}
                     </Link>
                   </NavDropdown.Item>
