@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getElementByCategory, getProducts} from '../../data/productsData';
+import { getElementByCategory, getProducts} from "../hook/useProducts";
 import ItemList from '../ItemList/ItemList';
 
 

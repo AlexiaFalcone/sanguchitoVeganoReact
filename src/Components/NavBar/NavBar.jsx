@@ -6,7 +6,7 @@ import CartWidget from '../CartWidget/CartWidget';
 import logo from '../../assets/logo.png';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
-import { categories } from '../../data/productsData';
+import { getElementByCategory } from '../hook/useProducts';
 
 
 const NavBar = () => {
