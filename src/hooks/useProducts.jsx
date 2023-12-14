@@ -7,10 +7,10 @@ export const getProducts = () =>{
 
     useEffect(() =>{
         const db = getFirestore();
-        const productsCollection = collection (db, 'products')
+        const productsCollection = collection (db, "products")
 
-        getDocs(productsCollection).then((snapshot) => {
-            const data = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data()}));
+        getDocs(productsCollection).then((res) => {
+            const data = res.docs.map((doc) => ({ id: doc.id, ...doc.data()}));
             setProducts (data);
         }).catch(() => setError(true))
     }, []);
@@ -45,9 +45,11 @@ export const getElementByCategory = (categoryId) => {
         
         getDocs(categoryQuery).then((res) =>{
             const data = res.data.map((doc) =>({id: doc.id, ...doc.data()}));
-            setProducts(data)
-        }).catch((error)=> setError(false))
+            setProducts(data) 
+        }).catch(()=> setError(false))
     }, [categoryId]);
   
     return { products, error };
   };
+
+
