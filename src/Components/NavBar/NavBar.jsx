@@ -6,7 +6,6 @@ import CartWidget from '../CartWidget/CartWidget';
 import logo from '../../assets/logo.png';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
-import { getElementByCategory } from '../hook/useProducts';
 
 
 const NavBar = () => {
@@ -15,22 +14,24 @@ const NavBar = () => {
       <Container>
         <Navbar.Brand>
           <Link to={"/"}>
-          <img className='LogoImg' src= {logo} alt="logo" />
+            <img className='LogoImg' src={logo} alt="logo" />
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <NavDropdown title="Categorias" id="basic-nav-dropdown">
-              {categories.map((product)=>{
-                return (
-                  <NavDropdown.Item key={product.id}>
-                    <Link to={`/category/${product.category}`} className='categoryStyle'>
-                      {product.category}
-                    </Link>
-                  </NavDropdown.Item>
-                )
-              })}
+            <NavDropdown.Item>
+                <Link to={`/category/panes`} className='categoryStyle'>
+                  Panes
+                </Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to={`/category/sanguche`} className='categoryStyle'>
+                  Sanguches
+                </Link>
+              </NavDropdown.Item>
+             
             </NavDropdown>
           </Nav>
           <CartWidget />
