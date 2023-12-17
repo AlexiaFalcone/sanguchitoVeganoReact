@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { ItemQuantitySelector} from "../ItemQuantitySelector/ItemQuantitySelector";
 
 const ItemDetail = ({ name, id, price, description, image }) => {
     return (
@@ -20,6 +21,7 @@ const ItemDetail = ({ name, id, price, description, image }) => {
                         <Card.Text className="descriptionCard">{description}</Card.Text>
                     </div>
                 </Card.Body>
+                <ItemQuantitySelector />
             </Card>
         </div>
     )
