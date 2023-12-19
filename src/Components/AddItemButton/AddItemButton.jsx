@@ -9,6 +9,7 @@ export const AddItemButton = ({label = "Agregar al carrito", quantity, handleRes
         return setItemCount(itemCount + quantity)
         handleReset();
     }
+    
 
     return(
         <Button onClick={handleAddToCart}> {label} </Button>
