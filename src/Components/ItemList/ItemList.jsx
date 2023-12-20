@@ -4,10 +4,10 @@ import './ItemList.css';
 
 const ItemList = ({items}) => {
   return(
-    <div className='styleCardContainer'>
+      <div className='styleCardContainer'>
       {items.map((itemProduct) => 
       (<Item key= {itemProduct.id} {...itemProduct} />))}
-    </div>
+      </div> 
   )
 };
 

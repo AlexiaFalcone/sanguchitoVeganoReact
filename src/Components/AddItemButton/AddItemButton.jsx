@@ -6,8 +6,9 @@ export const AddItemButton = ({label = "Agregar al carrito", quantity, handleRes
     const {itemCount, setItemCount} = React.useContext(CartContext);
     
     const handleAddToCart = () => {
-        return setItemCount(itemCount + quantity)
         handleReset();
+        return setItemCount(itemCount + quantity)
+        
     }
     
 
