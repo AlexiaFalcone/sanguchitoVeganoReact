@@ -1,0 +1,19 @@
+.inputStyle{
+    width: 40px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.quantityStyleContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.addButtonStyle{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

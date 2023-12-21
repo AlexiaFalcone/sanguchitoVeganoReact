@@ -20,7 +20,7 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <NavDropdown title="Categorias" id="basic-nav-dropdown">
+            <NavDropdown title="Categorias" id="basic-nav-dropdown" className='categoryStyleTitle'>
             <NavDropdown.Item>
                 <Link to={`/category/panes`} className='categoryStyle'>
                   Panes

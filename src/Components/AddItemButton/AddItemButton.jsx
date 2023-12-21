@@ -13,6 +13,6 @@ export const AddItemButton = ({label = "Agregar al carrito", quantity, handleRes
     
 
     return(
-        <Button onClick={handleAddToCart}> {label} </Button>
+        <Button variant="success" onClick={handleAddToCart}> {label} </Button>
     );
 };

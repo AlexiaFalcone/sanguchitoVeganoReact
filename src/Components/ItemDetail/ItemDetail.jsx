@@ -6,7 +6,7 @@ import { ItemQuantitySelector} from "../ItemQuantitySelector/ItemQuantitySelecto
 const ItemDetail = ({ name, id, price, description, image }) => {
     return (
         <div className="styleCardDiv">
-            <Card key={id} className='styleCard'>
+            <Card key={id} className='styleCardDetail'>
                 <Link to={`/item/${id}`}>
                     <Card.Img variant="top" className="imgCard" src={image} />
                 </Link>

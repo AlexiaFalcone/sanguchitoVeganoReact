@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 .styleCardDiv {
     display: flex;
     justify-content: space-evenly;
@@ -5,6 +7,15 @@
     margin-top: 10px;
     margin-left: 120px;
 
+}
+
+.styleCardDetail {
+    width: 370px;
+    background-color: #d7dbde;
+    padding: 10px;
+    border-radius: 10px;
+    margin-block: 35px;
+    transition: 0.8s;
 }
 
 .styleCard {
@@ -34,17 +45,17 @@
 }
 
 .nameCard{
-    font-size: 20px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Libre Baskerville', serif;
     font-weight: 700;
+    font-size: 1.4rem;
     color: rgba(17, 91, 17, 0.862);
     margin-bottom: 5px;
 }
 
 .descriptionCard{
-    font-size: 14px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Libre Baskerville', serif;
     font-weight: 400;
+    font-size: 1rem;
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
@@ -57,10 +68,10 @@
 }
 
 .priceCard{
-    font-size: 20px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    color: rgba(17, 91, 17, 0.862);
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(3, 3, 3, 0.705);
     margin-bottom: 5px;
 }
 
